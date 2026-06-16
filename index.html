@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celana Jeans Wide Leg Highwaist | Produk Kami</title>
+    
+    <!-- Import Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700|Playfair+Display" rel="stylesheet">
+    
+    <!-- CSS Styles -->
+    <style>
+        body {
+            background: #f4f4f4;
+            font-family: 'Nunito Sans', sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            overflow-x: hidden;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        /*---------------------------------------
+          Typography              
+        -----------------------------------------*/
+        h1, h2, h3, h4, h5, h6 {
+            font-style: normal;
+            font-weight: 300;
+            letter-spacing: 0px;
+        }
+
+        h1 {
+            color: #3d3d3f;
+            font-family: 'Playfair Display', serif;
+            font-size: 40px;
+            line-height: normal;
+        }
+
+        h2 {
+            color: #575757;
+            font-size: 35px;
+            line-height: normal;
+        }
+
+        h3 {
+            color: #d7b065;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 32px;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+        }
+
+        h4 {
+            color: #797979;
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        p {
+            color: #878787;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 25px;
+            letter-spacing: 0.2px;
+        }
+
+        strong, span {
+            color: #878787;
+            font-weight: normal;
+        }
+
+        /*---------------------------------------
+          Buttons               
+        -----------------------------------------*/
+        .arrow-btn i {
+            background: #000000;
+            border-radius: 50%;
+            color: #ffffff;
+            font-size: 20px;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            margin-top: 32px;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+        }
+
+        .arrow-btn i:hover {
+            background: #d7b065;
+        }
+
+        /*---------------------------------------
+          General               
+        -----------------------------------------*/
+        html {
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: #575757;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            text-decoration: none !important;
+        }
+
+        a:hover, a:active, a:focus {
+            color: #000000;
+            outline: none;
+        }
+
+        * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        *:before,
+        *:after {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .section-title {
+            margin: 0;
+            padding-bottom: 32px;
+        }
+
+        .parallax-section {
+            background-attachment: fixed !important;
+            background-size: cover !important;
+        }
+
+        #product, #info, #order, footer {
+            position: relative;
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        /*---------------------------------------
+          Pre loader section              
+        -----------------------------------------*/
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 99999;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            background: none repeat scroll 0 0 #ffffff;
+        }
+
+        .spinner {
+            border: 1px solid transparent;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        .spinner:before {
+            content: '';
+            box-sizing: border-box;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 65px;
+            height: 65px;
+            margin-top: -10px;
+            margin-left: -10px;
+            border-radius: 50%;
+            border: 1px solid #000000;
+            border-top-color: #f9f9f9;
+            animation: spinner .9s linear infinite;
+        }
+
+        @-webkit-keyframes spinner {
+            to {transform: rotate(360deg);}
+        }
+
+        @keyframes spinner {
+            to {transform: rotate(360deg);}
+        }
+
+        /*---------------------------------------
+          Product Section              
+        -----------------------------------------*/
+        #product {
+            background: url('350.png') 50% 0 repeat-y fixed;
+            background-size: cover;
+            background-position: center center;
+            border-radius: 5px;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            height: 75vh;
+            text-align: center;
+            position: relative;
+            margin: 82px 12px 0 12px;
+        }
+
+        .product-wrapper {
+            background: rgba(250,250,250,0.8);
+            padding: 32px 12px;
+            border-radius: 8px;
+        }
+
+        /*---------------------------------------
+          Info Section              
+        -----------------------------------------*/
+        #info {
+            padding-top: 100px;
+            background: #ffffff;
+        }
+
+        .info-thumb {
+            background: #f9f9f9;
+            border-radius: 5px;
+            padding: 42px 32px;
+            margin-bottom: 30px;
+        }
+
+        .color-list, .feature-list, .size-list {
+            text-align: left;
+            margin: 20px 0;
+        }
+
+        .color-list p, .feature-list p, .size-list p {
+            margin: 8px 0;
+        }
+
+        /*---------------------------------------
+          Order Section              
+        -----------------------------------------*/
+        #order {
+            background: #f4f4f4;
+        }
+
+        .price-box {
+            background: #d7b065;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .marketplace-info {
+            background: #ffffff;
+            border-radius: 5px;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        /*---------------------------------------
+          Footer section              
+        -----------------------------------------*/
+        footer {
+            background: #000000;
+            text-align: center;
+        }
+
+        footer h4 {
+            color: #f9f9f9;
+        }
+
+        footer a {
+            color: #aaa;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        /*---------------------------------------
+          Social icon             
+        -----------------------------------------*/
+        .social-icon {
+            position: relative;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .social-icon li {
+            display: inline-block;
+            list-style: none;
+        }
+
+        .social-icon li a {
+            background: #f9f9f9;
+            border-radius: 100%;
+            color: #3d3d3f;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            transition: all 0.4s ease-in-out;
+            width: 30px;
+height: 30px;
+            line-height: 30px;
+            text-align: center;
+            vertical-align: middle;
+            position: relative;
+            margin: 0px 6px 10px 6px;
+        }
+
+        .social-icon li a:hover {
+            background: #d7b065;
+            color: #ffffff;
+            transform: scale(1.1);
+        }
+
+        /*---------------------------------------
+          Mobile Responsive styles              
+        -----------------------------------------*/
+        @media (max-width: 980px) {
+            h1 {font-size: 30px;}
+            .info-thumb {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {font-size: 27px;}
+            h2 {font-size: 25px;}
+        }
+
+        @media (max-width: 580px) {
+            h3 {
+                font-size: 14px;
+                letter-spacing: 4px;
+            }
+            .info-thumb {
+                padding: 22px 12px;
+            }
+        }
+
+        @media (max-width: 360px) {
+            #product {
+                height: 85vh;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Product Section -->
+    <section id="product" class="parallax-section">
+        <div class="product-wrapper">
+            <h1>✨ CELANA JEANS WIDE LEG HIGHWAIST ✨</h1>
+            <p>👖 Model kekinian yang nyaman dipakai untuk berbagai aktivitas. Potongan wide leg memberikan kesan kaki lebih jenjang dan tampilan lebih fashionable.</p>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="info">
+        <div class="container">
+            <div class="section-title" style="text-align: center;">
+                <h2>Informasi Produk</h2>
+            </div>
+
+            <div class="info-thumb">
+                <h3>🌈 Pilihan Warna Tersedia</h3>
+                <div class="color-list">
+                    <p>🩵 Light Blue (seperti pada foto)</p>
+                    <p>💙 Medium Blue</p>
+                    <p>🔵 Dark Blue</p>
+                    <p>🖤 Black Denim</p>
+                    <p>🩶 Abu-Abu Denim / Grey Denim</p>
+                </div>
+            </div>
+
+            <div class="info-thumb">
+                <h3>💎 Keunggulan Produk</h3>
+                <div class="feature-list">
+                    <p>✔ Bahan jeans premium</p>
+                    <p>✔ Highwaist fit</p>
+                    <p>✔ Potongan wide leg trendy</p>
+                    <p>✔ Nyaman dipakai seharian</p>
+                    <p>✔ Mudah dipadukan dengan berbagai outfit</p>
+                </div>
+            </div>
+
+            <div class="info-thumb">
+                <h3>📏 Ukuran & Dimensi</h3>
+                <div class="size-list">
+                    <p>📐 Ukuran tersedia: 27 – 34</p>
+                    <p>📏 Panjang celana: 100 cm</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order">
+        <div class="container">
+            <div class="section-title" style="text-align: center;">
+                <h2>💰 Harga & Pemesanan</h2>
+            </div>
+
+            <div class="price-box">
+                🔥 Rp150.000 saja 🔥
+            </div>
+
+            <div style="text-align: center; margin: 20px 0;">
+                <p>🚚 Siap kirim ke seluruh Indonesia</p>
+                <p>📦 Stok terbatas!</p>
+                <p>💬 Order sekarang dan pilih warna favoritmu sebelum kehabisan! ✨</p>
+            </div>
+
+            <div class="marketplace-info">
+                <h3>📸 Informasi untuk Marketplace / Instagram</h3>
+                <p>Slide 1: Light Blue</p>
+                <p>Slide 2: Medium Blue</p>
+                <p>Slide 3: Dark Blue</p>
+                <p>Slide 4: Black Denim</p>
+                <p>Slide 5: Grey Denim</p>
+                <p>✨ Tersedia dalam berbagai warna yang mudah dipadukan dengan outfit apa pun! ✨</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>Terima Kasih Telah Berkunjung</h4>
+                    <ul class="social-icon">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+                    </ul>
+                    <p>&copy; 2025 Celana Jeans Wide Leg. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script untuk Preloader -->
+    <script>
+        window.addEventListener('load', function() {
+            document.querySelector('.preloader').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
